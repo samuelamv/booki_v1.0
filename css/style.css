@@ -358,6 +358,10 @@ article img{
     height: 200px;
     
 }
+
+footer ul{
+    width: 33%;
+}
 }
 
 /****** Responsive Mobile ***********/
