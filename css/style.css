@@ -26,6 +26,7 @@ nav ul{
     width: 69px;
 }
 .nav-link{
+    border-top: 3px solid #FFFFFF;
     padding-top: 14px;
 }
 .nav-link:hover {
@@ -149,12 +150,20 @@ form .fa-solid{
     flex-direction: row;
     justify-content: space-between;
 }
-
+article p span{
+    font-weight: 600;
+}
+/*** heb ***/
 .hebergement{
     width: 65%;
     height: auto;
     background: #F2F2F2;
     border-radius: 15px;
+}
+
+.hebergement a {
+    text-decoration: none;
+    color: #000000;
 }
 
 .hebergement h2{
@@ -166,8 +175,40 @@ form .fa-solid{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 30px;
     padding: 0 30px;
+    gap: 30px;
+}
+
+.hebergement-cards a {
+    flex: 25% 1 1;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    aspect-ratio: 3/2;
+}
+
+.hebergement-cards a article{
+    padding: 5px;
+}
+
+.hebergement-cards a article img{
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.hebergement-cards a article h3,p, .hebergement-card-rating{
+    padding: 0 0 0 16px;
+    margin: 5px 0;
+}
+
+.hebergement-card-rating .fa-solid{
+    color: #0065FC;
+}
+
+#incf{
+    color: #F2F2F2;
 }
 
 .show-more{
@@ -176,8 +217,10 @@ form .fa-solid{
     font-weight: 700;
     padding: 30px;
 }
+
+/*** pop ***/
 .populaire{
-    width: 30%;
+    width: 33%;
     background: #F2F2F2;
     border-radius: 15px;
 }
@@ -192,45 +235,8 @@ form .fa-solid{
 .pop-head i{
     color: #0065FC;
 }
-.hebergement-cards a {
-    width: 31%;
-    height: auto;
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 3px 15px 0px #0000001A;
-}
 
-.hebergement-cards a article img{
-    width: 98%;
-    height: 124px;
-    object-fit: cover;
-    margin: 1% 1% 0 1%;
-    border-radius: 20px 20px 0 0;
-}
-
-.hebergement-cards a article h3,p, .hebergement-card-rating{
-    padding: 0 0 0 16px;
-    margin: 5px 0;
-}
-
-article p span{
-    font-weight: 600;
-}
-
-.hebergement-card-rating .fa-solid{
-    color: #0065FC;
-}
-
-#incf{
-    color: #F2F2F2;
-}
-
-.hebergement a {
-    text-decoration: none;
-    color: #000000;
-}
-
-.populaire a {
+.populaire .populaire-cards a {
     text-decoration: none;
     color: #000000;
 }
@@ -240,23 +246,25 @@ article p span{
     gap: 30px;
     padding: 0 30px;
 }
-.populaire-cards article{
+.populaire-cards a{
     width: 100%;
-    height: 146px;
     border-radius: 20px;
     background-color: #FFFFFF;
     box-shadow: 0px 3px 15px 0px #0000001A;
+}
+.populaire-cards a article{
     display: flex;
     flex-direction: row;
+    padding: 5px;
 }
 
-.populaire-cards article img{
+.populaire-cards a article img{
     width: 30%;
     height: 136px;
     object-fit: cover;
-    padding: 1% 0 1% 1%;
     border-radius: 20px 0 0 20px;
 }
+
 .card-pop-content{
     display: flex;
     flex-direction: column;
@@ -268,11 +276,11 @@ article p span{
     margin: 5px 0;
 }
 
-.populaire-cards article p{
+.populaire-cards a article p{
     flex: 1;
 }
 
-.populaire-cards article p span{
+.populaire-cards a article p span{
     font-weight: 600;
 }
 .pop-card-rating{
@@ -307,7 +315,7 @@ article p span{
     color: #000000;
 }
 
-article img{
+.activity-card article img{
     width: 100%;
     height: 380px;
     object-fit: cover;
@@ -372,6 +380,10 @@ footer ul li a{
 }
 .populaire-cards a{
     width: 33%;
+}
+
+.populaire-cards a article img {
+    height: 165px;
 }
 
 /*** activité marseille ***/
@@ -475,7 +487,7 @@ form input{
 }
 
 .hebergement-cards a{
-    width: 100%; 
+    width: auto; 
 }
 /*** activite marseille ***/
 .activity-section{
@@ -496,12 +508,14 @@ form input{
     text-decoration: none;
     color: #000000;
 }
-
+.populaire-cards a article img {
+    height: 136px;
+}
 .activity-section h2 {
     padding-bottom: 30px;
 }
 
-.activity-article{
+.activity-article a{
     width: 100%;
     height: 200px;
 }
