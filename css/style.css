@@ -57,9 +57,10 @@ nav ul{
 form .fa-location-dot{
     padding: 16px 16px;
     border-radius: 15px 0 0 15px;
-    background-color: #FFFFFF;
+    background-color: #F2F2F2;
     color: #000000;
     font-weight: 700;
+    border: 1px solid #F2F2F2
 }
 
 form input{
@@ -68,10 +69,11 @@ form input{
     background-color: #FFFFFF;
     color: #000000;
     font-weight: 700;
+    border: 1px solid #F2F2F2
 }
 .search-btn{
-    border: 1px solid #0065FC;
-    height: 49px;
+    border: 1px solid #F2F2F2;
+    height: 50px;
     padding: 15px 16px;
     border-radius: 0px 15px 15px 0px;
     background-color: #0065FC;
@@ -86,7 +88,8 @@ form .fa-solid{
     border-radius: 15px;
     background-color: #0065FC;
     color: #FFFFFF;
-    box-shadow: 0px 3px 15px 0px #0000001A;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
 }
 
 .filter-section form{
@@ -107,7 +110,7 @@ form .fa-solid{
     font-weight: 700;
 }
 .btn-filter{
-    background: #D9D9D9;
+    background: #FFFFFF;
     border: 2px solid #D9D9D9;
     padding: 4px 19px;
     border-radius: 25px;
@@ -149,7 +152,13 @@ form .fa-solid{
 
 .hebergement{
     width: 65%;
-    height: auto; 
+    height: auto;
+    background: #F2F2F2;
+    border-radius: 15px;
+}
+
+.hebergement h2{
+    padding: 0 30px;
 }
 
 .hebergement-cards{
@@ -158,15 +167,19 @@ form .fa-solid{
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 30px;
+    padding: 0 30px;
 }
 
 .show-more{
     padding-top: 30px;
     font-size: 18px;
     font-weight: 700;
+    padding: 30px;
 }
 .populaire{
     width: 30%;
+    background: #F2F2F2;
+    border-radius: 15px;
 }
 .pop-head{
     display: flex;
@@ -174,13 +187,14 @@ form .fa-solid{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding: 0 30px;
 }
 .pop-head i{
     color: #0065FC;
 }
 .hebergement-cards a {
     width: 31%;
-    height: 207px;
+    height: auto;
     border-radius: 20px;
     background-color: #FFFFFF;
     box-shadow: 0px 3px 15px 0px #0000001A;
@@ -207,6 +221,10 @@ article p span{
     color: #0065FC;
 }
 
+#incf{
+    color: #F2F2F2;
+}
+
 .hebergement a {
     text-decoration: none;
     color: #000000;
@@ -220,6 +238,7 @@ article p span{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding: 0 30px;
 }
 .populaire-cards article{
     width: 100%;
@@ -263,7 +282,8 @@ article p span{
 
 /*** activity section ***/
 .activity-section{
-    padding: 60px 50px;
+    margin: 35px 50px;
+    padding: 30px;
 }
 
 .activity-section h2{
@@ -277,12 +297,14 @@ article p span{
     justify-content: space-between;
 }
 
-.activity-article {
+.activity-card a  {
     border-radius: 20px ;
-    width: 20%;
-    height: 439px;
+    width: 23.3%;
+    height: auto;
     background-color: #FFFFFF;
     box-shadow: 0px 3px 15px 0px #0000001A;
+    text-decoration: none;
+    color: #000000;
 }
 
 article img{
@@ -300,10 +322,11 @@ article h3{
 /*** footer ***/
 footer{
     background-color: #F2F2F2;
-    padding: 0 50px;
+    padding: 0 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0 50px;
 }
 
 footer ul{
@@ -345,6 +368,7 @@ footer ul li a{
 }
 .populaire-cards{
     flex-direction: row;
+    padding-bottom: 30px;
 }
 .populaire-cards a{
     width: 33%;
@@ -352,7 +376,7 @@ footer ul li a{
 
 /*** activité marseille ***/
 .activity-article{
-    height: 270px;
+    height: auto;
 }
 article img{
     height: 200px;
@@ -399,10 +423,14 @@ nav ul .nav-link{
 }
 form .fa-solid{
     display: block;
+    position: absolute;
+    right: 15px;
 }
 
 form input{
-    width: 75%;
+    width: 100%;
+    padding-left: 30px;
+    border-radius: 0 15px 15px 0;
 }
 /*** filter ***/
 .filter-section ul{
@@ -427,7 +455,12 @@ form input{
 /*** hosting section ***/
 .hosting-section {
     flex-direction: column-reverse;
-    gap: 50px;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+.hebergement{
+    background-color: #FFFFFF;
 }
 .populaire-cards{
     flex-direction: column;
@@ -442,14 +475,26 @@ form input{
 }
 
 .hebergement-cards a{
-    width: 100%;
-    
+    width: 100%; 
 }
 /*** activite marseille ***/
+.activity-section{
+    margin: 0;
+}
 .activity-card{
     flex-direction: column;
     gap: 15px;
     justify-content: unset;
+}
+
+.activity-card a  {
+    border-radius: 20px ;
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    text-decoration: none;
+    color: #000000;
 }
 
 .activity-section h2 {
@@ -467,7 +512,8 @@ form input{
 
 /*** footer ***/
 footer{
-    padding: 0 20px;
+    margin: 0;
+    padding: 0 30px;
     flex-direction: column;
 }
 
